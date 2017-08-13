@@ -1,6 +1,6 @@
 {
   "name": "styled-native-polished",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "Styled Component helpers for React Native",
   "main": "index.js",
   "repository": "git@github.com:Astrocoders/styled-native-polished.git",
