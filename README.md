@@ -1,7 +1,27 @@
-# styled-native-tricks-and-tips
-Styled component tricks
+# styled-native-polished
+Styled Components helpers for React Native
 
-## Media-like
+## Install
+```
+yarn add styled-native-polished styled-component
+```
+
+## Setup
+The recommended approach of usage is using ThemeProvider
+```js
+// index.js
+
+...
+import nativePolished from 'styled-native-polished'
+import theme './theme'
+
+<ThemeProvider theme={{ ...nativePolished, ...theme}}>
+  <App />
+</ThemeProvider>
+```
+
+# Helpers
+## Media
 ```js
 // theme.js
 
