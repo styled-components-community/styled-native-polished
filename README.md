@@ -33,7 +33,7 @@ const ItemDetails = styled.View`
 `
 ```
 
-## Platform specific code
+## Platform specific styles
 ```js
 const YouExpectedAnElementButItWasMeDioBtn = styled.TouchableOpacity`
  border-color: blue;
