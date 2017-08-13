@@ -31,10 +31,10 @@ import { ios } from 'styled-native-polished'
 import { media } from 'styled-native-polished'
 
 const ItemDetails = styled.View`
- ${props => media({ minWidth: 500 })`
+ ${media({ minWidth: 500 })`
    width: 100%;
  `};
-  ${props => media({ maxWidth: 500 })`
+  ${media({ maxWidth: 500 })`
    width: 60%;
  `};
 `
@@ -46,6 +46,6 @@ import { ios } from 'styled-native-polished'
 
 const YouExpectedAnElementButItWasMeDioBtn = styled.TouchableOpacity`
  border-color: blue;
- ${props => ios`border-color: red`};
+ ${ios`border-color: red`};
 `
 ```
