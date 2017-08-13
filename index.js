@@ -4,15 +4,15 @@ import some from 'lodash.some'
 
 const { width: WINDOW_WIDTH } = Dimensions.get('window')
 
-export default {
-  media: ({ maxWidth, minWidth }) => (...args) => {
-    const conditions = [
-      maxWidth && WINDOW_WIDTH < maxWidth,
-      minWidth && WINDOW_WIDTH > minWidth,
-    ]
+export const media = ({ maxWidth, minWidth }) => (...args) => {
+  const conditions = [
+    maxWidth && WINDOW_WIDTH < maxWidth,
+    minWidth && WINDOW_WIDTH > minWidth,
+  ]
 
-    return some(conditions, Boolean) ? css(...args) : {}
-  },
-  ios: (...args) => Platform.select({ ios: css(...args), android: {} }),
-  android: (...args) => Platform.select({ android: css(...args), ios: {} }),
+  return some(conditions, Boolean) ? css(...args) : {}
 }
+
+export const ios = (...args) => Platform.select({ ios: css(...args), android: {} })
+
+export const android = (...args) => Platform.select({ android: css(...args), ios: {} })
