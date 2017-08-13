@@ -46,7 +46,7 @@ const Thing = styled.Text`
 
 Or 
 
-```
+```js
 // theme.js
 import { Platform } from 'react-native'
 
