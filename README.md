@@ -7,12 +7,12 @@ yarn add styled-native-polished styled-component
 ```
 
 ## Setup
-The recommended approach of usage is using ThemeProvider
+You provide all the methods using the theme provider
 ```js
 // index.js
 
 ...
-import nativePolished from 'styled-native-polished'
+import * as nativePolished from 'styled-native-polished'
 import theme './theme'
 
 <ThemeProvider theme={{ ...nativePolished, ...theme}}>
@@ -20,14 +20,21 @@ import theme './theme'
 </ThemeProvider>
 ```
 
+Or import as necessary with the named imports
+```
+import { ios } from 'styled-native-polished'
+```
+
 # Helpers
 ## Media
 ```js
+import { media } from 'styled-native-polished'
+
 const ItemDetails = styled.View`
- ${props => props.theme.media({ minWidth: 500 })`
+ ${props => media({ minWidth: 500 })`
    width: 100%;
  `};
-  ${props => props.theme.media({ maxWidth: 500 })`
+  ${props => media({ maxWidth: 500 })`
    width: 60%;
  `};
 `
@@ -35,8 +42,10 @@ const ItemDetails = styled.View`
 
 ## Platform specific styles
 ```js
+import { ios } from 'styled-native-polished'
+
 const YouExpectedAnElementButItWasMeDioBtn = styled.TouchableOpacity`
  border-color: blue;
- ${props => props.ios`border-color: red`};
+ ${props => ios`border-color: red`};
 `
 ```
