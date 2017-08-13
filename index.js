@@ -1,5 +1,5 @@
 import { Dimensions, Platform } from 'react-native'
-import { css } from 'react-native'
+import { css } from 'styled-components/native'
 import some from 'lodash.some'
 
 const { width: WINDOW_WIDTH } = Dimensions.get('window')
