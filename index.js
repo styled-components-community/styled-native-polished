@@ -16,3 +16,5 @@ export const media = ({ maxWidth, minWidth }) => (...args) => {
 export const ios = (...args) => Platform.select({ ios: css(...args), android: {} })
 
 export const android = (...args) => Platform.select({ android: css(...args), ios: {} })
+
+export * from './lib/AnimatedView'
