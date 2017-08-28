@@ -26,7 +26,7 @@ import { ios } from 'styled-native-polished'
 ```
 
 # Helpers
-## Media
+## media
 ```js
 import { media } from 'styled-native-polished'
 
@@ -40,12 +40,46 @@ const ItemDetails = styled.View`
 `
 ```
 
-## Platform specific styles
+## ios
+iOS specific styles
 ```js
 import { ios } from 'styled-native-polished'
 
 const YouExpectedAnElementButItWasMeDioBtn = styled.TouchableOpacity`
  border-color: blue;
  ${ios`border-color: red`};
+`
+```
+
+## android
+Android specific styles
+```js
+import { android } from 'styled-native-polished'
+
+const YouExpectedAnElementButItWasMeDioBtn = styled.TouchableOpacity`
+ border-color: blue;
+ ${android`border-color: red`};
+`
+```
+
+## fullAlign
+Flex full centralize parent items
+```js
+import { fullAlign } from 'styled-native-polished'
+
+const Wrapper = styled.View`
+ border-color: blue;
+ ${fullAlign()};
+`
+```
+
+## roundedWrapper(size)
+Helps to create a completely rounded view
+```js
+import { roundedWrapper } from 'styled-native-polished'
+
+const RoundedButton = styled.TouchableOpacity`
+ border-color: blue;
+ ${roundedWrapper('40px')};
 `
 ```
