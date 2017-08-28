@@ -7,10 +7,12 @@
   "author": "Gabriel R. Abreu <grsabreu@gmail.com>",
   "license": "MIT",
   "peerDependencies": {
+    "react": "^16.0.0-alpha.6",
     "react-native": "^0.47.1",
     "styled-components": "^2.1.2"
   },
   "dependencies": {
-    "lodash.some": "^4.6.0"
+    "lodash.some": "^4.6.0",
+    "styled-components": "^2.1.2"
   }
 }
